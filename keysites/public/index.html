@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Script Hub — Get Key</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>🔑 Get Your Key</h1>
+    <p class="sub">Watch 2 short ads to unlock your 24-hour access key.</p>
+  </header>
+
+  <div class="steps">
+    <div class="step" id="step1">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h2>Ad #1</h2>
+        <div class="ad-box" id="adBox1">
+          <!-- Replace with your ad network's embed code (Adsterra / Monetag / etc.) -->
+          <div class="ad-placeholder">Ad Placeholder #1</div>
+        </div>
+        <button class="btn" id="watchBtn1">Watch Ad</button>
+        <div class="progress" id="progress1"></div>
+      </div>
+    </div>
+
+    <div class="step" id="step2">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h2>Ad #2</h2>
+        <div class="ad-box" id="adBox2">
+          <div class="ad-placeholder">Ad Placeholder #2</div>
+        </div>
+        <button class="btn" id="watchBtn2" disabled>Watch Ad</button>
+        <div class="progress" id="progress2"></div>
+      </div>
+    </div>
+
+    <div class="step" id="step3">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h2>Your Key</h2>
+        <button class="btn primary" id="getKeyBtn" disabled>Get Key</button>
+        <div class="key-box hidden" id="keyBox">
+          <code id="keyText"></code>
+          <button class="btn small" id="copyBtn">Copy</button>
+        </div>
+        <p class="expiry hidden" id="expiryText"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Key valid for 24 hours after generation.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
